@@ -22,7 +22,7 @@ class CustomColorScheme {
     onPrimaryContainer: LightPalette.onPrimaryContainer,
   );
 
-  static const ColorScheme darkScheme = ColorScheme.light(
+  static const ColorScheme darkScheme = ColorScheme.dark(
     primary: DarkPalette.primary,
     onPrimary: DarkPalette.onPrimary,
     primaryContainer: DarkPalette.primaryContainer,

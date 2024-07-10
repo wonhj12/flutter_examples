@@ -29,11 +29,12 @@ class _SettingViewState extends State<SettingView> {
           InkWell(
             onTap: () {
               showModalBottomSheet(
-                  backgroundColor: Colors.transparent,
-                  context: (context),
-                  builder: (BuildContext context) {
-                    return themeModal();
-                  });
+                backgroundColor: Colors.transparent,
+                context: (context),
+                builder: (BuildContext context) {
+                  return themeModal();
+                },
+              );
             },
             child: Container(
               margin: const EdgeInsets.all(16),
@@ -59,7 +60,7 @@ class _SettingViewState extends State<SettingView> {
     );
   }
 
-  // 테마 선택 모달
+// 테마 선택 모달
   Widget themeModal() {
     return SafeArea(
       child: Column(
