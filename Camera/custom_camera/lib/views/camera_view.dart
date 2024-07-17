@@ -82,17 +82,18 @@ class _CameraViewState extends State<CameraView> {
               child: Container(
                 padding: const EdgeInsets.only(bottom: 64),
                 child: GestureDetector(
-                    onTap: () {
-                      // 사진 촬영 함수 호출
-                      context.read<CameraViewModel>().takePicture(context);
-                    },
-                    child: Icon(
-                      Icons.circle,
-                      size: 64,
-                      color: context.read<CameraViewModel>().canTakePicture
-                          ? Colors.white
-                          : Colors.grey,
-                    )),
+                  onTap: () {
+                    // 사진 촬영 함수 호출
+                    context.read<CameraViewModel>().takePicture(context);
+                  },
+                  child: Icon(
+                    Icons.circle,
+                    size: 64,
+                    color: context.read<CameraViewModel>().canTakePicture
+                        ? Colors.white
+                        : Colors.grey,
+                  ),
+                ),
               ),
             ),
           ),

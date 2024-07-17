@@ -7,6 +7,7 @@ class HomeViewModel with ChangeNotifier {
   String? imgPath;
 
   void openCamera(BuildContext context) async {
+    // CameraView가 닫힐 때 반환된 값을 저장
     String? tempImg = await Navigator.push(
       context,
       MaterialPageRoute(
